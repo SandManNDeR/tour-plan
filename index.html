@@ -16,6 +16,19 @@
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9145b8f9-c6ad-445c-ad3f-de0fea3cefb6&lang=ru_RU" type="text/javascript"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map("YMapsID", {
+        center: [45.025315, 38.971465],
+        zoom: 15
+      });
+    });
+  </script>
+
 </head>
 <body>
   <header class="navbar">
@@ -181,8 +194,8 @@
           <button class="button booking__button">View Other Options</button>
         </div>
         <!-- /.booking -->
-        <div class="map">
-        
+        <div class="map" id="YMapsID">
+          
         </div>
         <!-- /.map -->
       </div>
