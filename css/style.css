@@ -507,6 +507,7 @@ template {
 .hotel {
   padding-top: 23px;
   padding-bottom: 70px;
+  padding-left: 0;
 }
 
 .hotel-info {
@@ -581,8 +582,10 @@ template {
 }
 
 .hotel-slider {
+  position: relative;
   width: 728px;
   height: 450px;
+  margin-left: 0;
 }
 
 .hotel-slider__button {
@@ -895,6 +898,12 @@ template {
   border: none;
 }
 
+.parallax-window {
+  minheight: 260px;
+  background: transparent;
+  speed: float  0.2;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
@@ -921,7 +930,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   padding: 0 62px 30px;
   margin: 50px auto 0;
   background-color: #fff;
@@ -1039,10 +1048,10 @@ template {
   .container {
     max-width: 960px;
   }
-  .hotel__slider {
-    width: 590px;
+  .hotel-slider {
+    max-width: 590px;
   }
-  .swiper-slide__img {
+  .hotel-slider__img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1085,6 +1094,9 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
+  .hotel-slider {
+    max-width: 700px;
+  }
   .hotel-right-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1094,11 +1106,11 @@ template {
   .booking {
     width: 340px;
   }
-  .slider {
-    width: 100%;
-  }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1167,7 +1179,8 @@ template {
             order: -1;
     margin-left: 0;
   }
-  .slider {
+  .hotel-slider {
+    width: 100%;
     height: 350px;
   }
   .hotel-right-block {
@@ -1196,16 +1209,38 @@ template {
     max-width: 576px;
     width: 90%;
   }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 35px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: -65px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    margin-right: -65px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 279px;
   }
-  .slider__slider {
+  .hotel__slider {
     margin-bottom: 20px;
   }
   .booking {
