@@ -32,7 +32,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = '19sandmann93@gmail.com'; // Логин на почте
-    $mail->Password   = 'eodgivebdejsbvea'; // Пароль на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('19sandmann93@gmail.com', 'Александр Шеремет'); // Адрес самой почты и имя отправителя
