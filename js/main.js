@@ -66,4 +66,44 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
+// Валидация 
+
+$(".modal__form").validate({
+  messages: {
+    name: {
+      required: "Please specify your full name",
+      minlenght: "The name must be at least 2 characters long",
+    },
+    phone: "Please specify your phone",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+})
+
+$(".footer__form").validate({
+  messages: {
+    name: {
+      required: "Please specify your full name",
+      minlenght: "The name must be at least 2 characters long",
+    },
+    phone: "Please specify your phone"
+  }
+})
+
+$(".subscribe__form").validate({
+  errorClass: "subs-error",
+  messages: {
+    email: {
+      required: "We need your email address to contact you",
+      email: "Email address format invalid"
+    }
+  }
+})
+
+$(document).ready(function(){
+  $(".phone__input").mask("+7 (999) 999-99-99");
+});
+
 });
