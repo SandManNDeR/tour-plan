@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -213,7 +214,7 @@
   </section>
 
   <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg" data-speed="0.7">
-    <div class="newsletter-wrapper">
+    <div class="newsletter-wrapper" data-aos="fade-right" data-aos-delay="200">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
         <span class="newsletter-title__strong">NEWSLETTER</span>
@@ -306,28 +307,28 @@
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in">
           <img class="card__image" src="img/card-image-1.jpg" alt="Card: The curious corner of chamarel">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in">
           <img class="card__image" src="img/card-image-2.jpg" alt="Card: Gymkhana club golf course">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in">
           <img class="card__image" src="img/card-image-3.jpg" alt="Card: Tamarind falls hiking trip - full day">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in">
           <img class="card__image" src="img/card-image-4.jpg" alt="Card: The blue marine discovery quest">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -424,7 +425,7 @@
 
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--second">SEND US A MESSAGE</h3>
-          <form action="send.php" method="POST" class="form footer__form">
+          <form action="send.php" method="POST" class="form footer__form" data-aos="fade-left" data-aos-delay="100">
             <div class="footer__input-group">
               <input required minlength="2" type="text" name="name" class="input footer__input" placeholder="Your Full Name*">
             </div>
@@ -484,10 +485,11 @@
   </div>
   <!-- /.modal -->
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js" defer></script>
+  <script src="js/aos.js" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/jquery.mask.min.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
   <script src="js/main.js"></script>
 </body>
 
