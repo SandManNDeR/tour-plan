@@ -69,6 +69,7 @@ document.addEventListener('keydown', (event) => {
 // Валидация 
 
 $(".modal__form").validate({
+  errorClass: "modal-error",
   messages: {
     name: {
       required: "Please specify your full name",
@@ -83,6 +84,7 @@ $(".modal__form").validate({
 })
 
 $(".footer__form").validate({
+  errorClass: "footer-error",
   messages: {
     name: {
       required: "Please specify your full name",

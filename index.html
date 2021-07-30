@@ -472,9 +472,15 @@
       <h3 class="modal__title modal__title--second">BOOKING</h3>
 
       <form action="send.php" method="POST" class="form modal__form">
-        <input required minlength="2" type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
-        <input required type="tel" name="phone" class="input modal__input phone__input" placeholder="Phone Number*">
-        <input required type="email" name="email" class="input modal__input" placeholder="Email*">
+        <div class="modal__input-group">
+          <input required minlength="2" type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+        </div>
+        <div class="modal__input-group">
+          <input required type="tel" name="phone" class="input modal__input phone__input" placeholder="Phone Number*">
+        </div>
+        <div class="modal__input-group">
+          <input required type="email" name="email" class="input modal__input" placeholder="Email*">
+        </div>
         <textarea cols="30" rows="10" name="message" class="message modal__message" placeholder="Message"></textarea>
         <button class="button modal__button " type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
