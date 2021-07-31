@@ -98,8 +98,7 @@ $(".subscribe__form").validate({
   errorClass: "subs-error",
   messages: {
     email: {
-      required: "We need your email address to contact you",
-      email: "Email address format invalid"
+      email: "Email address format invalid",
     }
   }
 })

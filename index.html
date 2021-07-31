@@ -18,10 +18,10 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=9145b8f9-c6ad-445c-ad3f-de0fea3cefb6&lang=ru_RU" type="text/javascript"></script>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9145b8f9-c6ad-445c-ad3f-de0fea3cefb6&lang=ru_RU"></script>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-  <script type="text/javascript">
+  <script>
     ymaps.ready(function () {
       var myMap = new ymaps.Map("YMapsID", {
         center: [45.025315, 38.971465],
@@ -280,7 +280,7 @@
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
                   Отец работает в ФСБ. Сегодня срочно вызвали на совещание. Вернулся поздно и ничего не объяснил. Сказал лишь собирать
-                  вещи и бежать в магазин за продуктами на две недели. Сейчас едем куда-то далеко за город, в какой-то <gradient class="gradient">"GRAND HILTON HOTEL"</gradient>.
+                  вещи и бежать в магазин за продуктами на две недели. Сейчас едем куда-то далеко за город, в какой-то <span class="gradient">"GRAND HILTON HOTEL"</span>.
                   Не знаю что происходит, но мне кажется начался...отдых у бати...
                 </p>
               </div>
@@ -447,7 +447,7 @@
     <!-- /.container -->
   </footer>
 
-  <section class="footer-info">
+  <div class="footer-info">
     <div class="container">
       <div class="footer-info-wrapper">
         <div class="footer-info__privacy">
@@ -460,7 +460,7 @@
       </div>
     </div>
     <!-- /.container -->
-  </section>
+  </div>
 
   <div class="modal">
     <div class="modal__overlay"></div>
