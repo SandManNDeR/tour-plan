@@ -27,16 +27,6 @@
       padding-bottom: 30px
     &__search
       margin-left: 48px
-    &-menu
-      width: 673px
-      padding-top: 20px
-      padding-bottom: 22px
-      margin-left: 14px
-      &__link
-        font-style: normal
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
   .search
     &__input
       width: 340px
@@ -166,7 +156,8 @@
         margin-top: 23px
         width: 539px
     &__ul
-      width: 539px
+      &--legal
+        width: 150px
     &__item
       &--second
         margin-left: 3px
@@ -190,6 +181,8 @@
     width: 92%
   .logo
     width: 99px
+  .search
+    margin-left: 0
   .navbar
     &-bottom
       display: none
@@ -210,6 +203,10 @@
         z-index: 3
     &-menu
       flex-direction: column
+      align-items: center
+      &--mobile
+        margin-left: 0
+        margin-right: 0
       &__item
         margin-bottom: 20px
         &--mobile
@@ -274,6 +271,8 @@
     width: 80%
     margin: auto
     margin-bottom: 30px
+    &__button
+      width: 100%
   .map
     width: 100%
   .newsletter
@@ -316,6 +315,9 @@
     &-top
       padding-top: 23px
       padding-bottom: 10px
+  .search
+    &__input
+      width: 250px
   .logo
     width: 99px
   .stars
@@ -414,7 +416,6 @@
         margin-bottom: 27px
         margin-left: -3px
     &__ul
-      width: 270px
       margin-top: -9px
       margin-left: -5px
     &__social
@@ -479,3 +480,9 @@
       align-items: flex-start
     &__privacy
       margin-bottom: 10px
+  .modal
+    &__dialog
+      max-width: 300px
+      padding: 22px 44px
+    &__form
+      width: 100%
