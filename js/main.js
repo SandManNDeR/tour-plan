@@ -94,7 +94,7 @@ $(".footer__form").validate({
   }
 })
 
-$(".subscribe__form").validate({
+$(".newsletter__form").validate({
   errorClass: "subs-error",
   messages: {
     email: {
@@ -104,7 +104,7 @@ $(".subscribe__form").validate({
 })
 
 $(document).ready(function(){
-  $(".phone__input").mask("+7 (999) 999-99-99");
+  $(".input--phone").mask("+7 (999) 999-99-99");
 });
 
 AOS.init();

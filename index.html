@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour Plan</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9145b8f9-c6ad-445c-ad3f-de0fea3cefb6&lang=ru_RU"></script>
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
   <script>
     ymaps.ready(function () {
@@ -35,20 +35,20 @@
 
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--fixed">
     <div class="container navbar__container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-
+    
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: serch">
           </button>
         </form>
-
+    
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
@@ -63,7 +63,6 @@
       <!-- /.navbar-top -->
     </div>
     <!-- /.container -->
-
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu navbar-menu--mobile">
@@ -219,7 +218,7 @@
         subscribe to our
         <span class="newsletter-title__strong">NEWSLETTER</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe__form subscribe newsletter__search">
+      <form action="send.php" method="POST" class="newsletter__form subscribe newsletter__search">
         <input required type="email" name="email" class="subscribe__input" placeholder="Your email address">
         <button class="subscribe__button">Send</button>
       </form>
@@ -405,21 +404,25 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon footer__icon-mark" src="img/map-mark.svg" alt="Icon: Map Mark">
               </div>
-              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+              <a href="#" class="footer__item-text">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</a>
             </li>
             <li class="footer__item footer__item--third">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon footer__icon-phone" src="img/footer-phone-call.svg" alt="Icon: Phone">
               </div>
-              Tel (business hours) : 269 1500,<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br> 
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+              <a href="#" class="footer__item-text">
+                Tel (business hours) : 269 1500,<br>
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+              </a>
             </li>
             <li class="footer__item footer__item--second">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon footer__icon-email" src="img/footer-email.svg" alt="Icon: E-mail">
               </div>
-              cherly.lawson@example.com
+              <a href="#" class="footer__item-text">
+                cherly.lawson@example.com
+              </a>
             </li>
           </ul>
         </div>
@@ -433,11 +436,11 @@
             </div>
 
             <div class="footer__input-group">
-              <input required type="tel" name="phone" class="input footer__input phone__input" placeholder="Phone Number*">
+              <input required type="tel" name="phone" class="input footer__input input--phone" placeholder="Phone Number*">
             </div>
             <textarea cols="30" rows="10" name="message" class="message footer__message" placeholder="Message"></textarea>
-            <button class="button footer__button footer__form--order-1" type="submit">Send</button>
-            <span class="footer__info footer__form--order-0">* Required Fields</span>
+            <button class="button footer__button footer__button--form" type="submit">Send</button>
+            <span class="footer__info footer__info--span">* Required Fields</span>
           </form>
         </div>
 
@@ -478,7 +481,7 @@
           <input required minlength="2" type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
         </div>
         <div class="modal__input-group">
-          <input required type="tel" name="phone" class="input modal__input phone__input" placeholder="Phone Number*">
+          <input required type="tel" name="phone" class="input modal__input input--phone" placeholder="Phone Number*">
         </div>
         <div class="modal__input-group">
           <input required type="email" name="email" class="input modal__input" placeholder="Email*">

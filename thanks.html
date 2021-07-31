@@ -128,6 +128,9 @@
           <p class="hotel-description hotel-info__description">
             Our manager will contact you soon
           </p>
+          <form action="index.html" target="_self">
+            <button class="button">Back</button>
+          </form>
         </div>
         <!-- /.hotel-info__text -->
       </div>
@@ -140,10 +143,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Image: Logo" class="logo footer__logo">
-
+        <div class="footer-wrapper__logo">
+          <img src="img/vertical-logo.svg" alt="Image: Logo" class="logo footer__logo">
+        </div>
+  
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">ALL CATEGORIES</h3>
+          <h3 class="footer__title footer__title-categories">ALL CATEGORIES</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -156,7 +161,7 @@
           </ul>
         </div>
         <!-- /.footer__list -->
-
+  
         <div class="footer__list footer__additional">
           <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
@@ -169,7 +174,7 @@
           </ul>
         </div>
         <!-- /.footer__list -->
-
+  
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">SOCIAL NETWORK</h3>
           <div class="footer__social-links">
@@ -179,10 +184,10 @@
           </div>
         </div>
         <!-- /.footer__social-network -->
-
+  
         <div class="footer__list footer__legal">
           <h3 class="footer__title">LEGAL INFORMATION</h3>
-          <ul class="footer__ul">
+          <ul class="footer__ul footer__ul--legal">
             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
@@ -190,53 +195,60 @@
           </ul>
         </div>
         <!-- /.footer__list -->
-
+  
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--second">CONTACT DETAILS</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--second">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/map-mark.svg" alt="Icon: Map Mark">
+                <img class="footer__icon footer__icon-mark" src="img/map-mark.svg" alt="Icon: Map Mark">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item footer__item--second">
+            <li class="footer__item footer__item--third">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-phone-call.svg" alt="Icon: Phone">
+                <img class="footer__icon footer__icon-phone" src="img/footer-phone-call.svg" alt="Icon: Phone">
               </div>
               Tel (business hours) : 269 1500,<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br> 
+              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
             </li>
             <li class="footer__item footer__item--second">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/footer-email.svg" alt="Icon: E-mail">
+                <img class="footer__icon footer__icon-email" src="img/footer-email.svg" alt="Icon: E-mail">
               </div>
               cherly.lawson@example.com
             </li>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
-
+  
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--second">SEND US A MESSAGE</h3>
-          <form action="send.php" method="POST" class="form footer__form">
-            <input type="text" name="name" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" name="phone" class="input footer__input" placeholder="Phone Number*">
+          <h3 class="footer__title footer__title--form">SEND US A MESSAGE</h3>
+          <form action="send.php" method="POST" class="form footer__form" data-aos="fade-left" data-aos-delay="100">
+            <div class="footer__input-group">
+              <input required minlength="2" type="text" name="name" class="input footer__input"
+                placeholder="Your Full Name*">
+            </div>
+  
+            <div class="footer__input-group">
+              <input required type="tel" name="phone" class="input footer__input phone__input"
+                placeholder="Phone Number*">
+            </div>
             <textarea cols="30" rows="10" name="message" class="message footer__message" placeholder="Message"></textarea>
             <button class="button footer__button footer__form--order-1" type="submit">Send</button>
             <span class="footer__info footer__form--order-0">* Required Fields</span>
           </form>
         </div>
-
+  
       </div>
       <!-- /.footer-wrapper -->
     </div>
     <!-- /.container -->
   </footer>
-
-  <section class="footer-info">
+  
+  <div class="footer-info">
     <div class="container">
       <div class="footer-info-wrapper">
         <div class="footer-info__privacy">
@@ -244,40 +256,50 @@
           <a href="#" class="footer-info__text">Conditions of use</a>
           <a href="#" class="footer-info__text">Cancellation policy</a>
         </div>
-        
+  
         <img class="footer-info__payment" src="img/payment.png" alt="Image: Payment">
       </div>
     </div>
     <!-- /.container -->
-  </section>
-
+  </div>
+  
   <div class="modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
+  
     <div class="modal__dialog">
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="Icon: close">
       </a>
-
+  
       <h3 class="modal__title modal__title--second">BOOKING</h3>
-
+  
       <form action="send.php" method="POST" class="form modal__form">
-        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
-        <input type="text" name="phone" class="input modal__input" placeholder="Phone Number*">
-        <input type="text" name="email" class="input modal__input" placeholder="Email*">
-        <textarea cols="30" rows="10" name="message" class="message footer__message" placeholder="Message"></textarea>
-        <button class="button modal__button modal__form--order-1" type="submit">Send</button>
-        <span class="modal__info footer__form--order-0">* Required Fields</span>
+        <div class="modal__input-group">
+          <input required minlength="2" type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+        </div>
+        <div class="modal__input-group">
+          <input required type="tel" name="phone" class="input modal__input phone__input" placeholder="Phone Number*">
+        </div>
+        <div class="modal__input-group">
+          <input required type="email" name="email" class="input modal__input" placeholder="Email*">
+        </div>
+        <textarea cols="30" rows="10" name="message" class="message modal__message" placeholder="Message"></textarea>
+        <button class="button modal__button " type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
       </form>
-
+  
     </div>
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
+  
+  <script src="js/jquery-3.6.0.min.js" defer></script>
+  <script src="js/aos.js" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/jquery.mask.min.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
   <script src="js/main.js"></script>
-</body>
+  </body>
 
 </html>
