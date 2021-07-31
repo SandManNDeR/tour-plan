@@ -70,6 +70,8 @@
   &__item
     display: flex
     align-items: flex-start
+    flex-wrap: wrap
+    width: 100%
     color: $ftc
     font-style: normal
     font-weight: normal
@@ -78,11 +80,21 @@
     &-text
       color: $light
       text-decoration: none
+      white-space: nowrap
     &--second
+      flex-wrap: nowrap
       margin-bottom: 13px
       margin-left: 2px
     &--third
+      width: 100%
+      flex-wrap: wrap
       margin-bottom: 23px
+    &-contacts
+      &--first
+        margin-top: -14px
+        margin-left: 41px
+      &--second
+        margin-left: 40px
   &__icon
     margin-top: 3px
     &-mark
@@ -115,6 +127,7 @@
   &__input
     width: 100%
     &-group
+      position: relative
       margin-bottom: 15px
       flex-basis: 47%
   &__message
