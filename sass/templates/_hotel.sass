@@ -1,20 +1,27 @@
 .hotel
-  padding-top: 23px
+  padding-top: 13px
   padding-bottom: 70px
   padding-left: 0
+  font-family: "Mulish"
   &-info
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 20px
+    padding-bottom: 7px
     &__offer
       margin-left: 14px
-      margin-top: 4px
+      margin-top: 1px
     &__name
-      margin-top: 4px
+      margin-top: 2px
       margin-bottom: 0
     &__description
-      margin: 5px 0
+      margin-top: 0
+      margin-bottom: 12px
+      font-family: "Mulish"
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
   &-name
     font-size: 24px
     line-height: 30px
@@ -78,15 +85,22 @@
         z-index: 1
         background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .stars
+  margin-top: 3px
+  margin-left: 2px
   flex-basis: 100%
+  &__icon
+    width: 6px
+    height: 6px
 .offer
   font-size: 10px
   line-height: 13px
-  padding: 4px 9px
+  padding: 3px 10px
   background-color: $primary
   border-radius: 3px
   color: #ffffff
 .rating
+  padding-top: 3px
+  margin-top: -5px
   max-width: 65px
   min-height: 45px
   text-align: center
@@ -96,13 +110,20 @@
   &__text
     font-size: 8px
     line-height: 10px
+    font-style: normal
+    font-weight: 600
   &__counter
     font-size: 14px
     line-height: 18px
+    font-style: normal
+    font-weight: bold
 .booking
   width: 350px
   min-height: 210px
-  padding: 28px
+  padding-top: 29px
+  padding-bottom: 25px
+  padding-left: 26px
+  padding-right: 29px
   border-radius: 8px
   background-color: $dark
   color: $light
@@ -124,6 +145,8 @@
     font-size: 24px
     line-height: 33px
   &__per-room
+    margin-top: -3px
+    margin-left: -2px
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -138,14 +161,14 @@
     font-style: normal
     font-weight: normal
     font-size: 12px
-    line-height: 16px
+    line-height: 15px
   &__description
     margin-left: 9px
   &__call-center
     display: flex
     align-items: center
     justify-content: space-between
-    margin-bottom: 17px
+    margin-bottom: 16px
   &__quick
     font-style: normal
     font-weight: 600

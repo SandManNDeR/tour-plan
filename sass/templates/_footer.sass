@@ -1,36 +1,52 @@
 .footer
   padding-top: 108px
-  padding-bottom: 46px
+  padding-bottom: 39px
   background-color: $dark
   color: $light
+  font-family: "Mulish"
   &-wrapper
     display: grid
-    grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
+    &__logo
+      margin-top: 10px
+      min-width: 166px
+      grid-row: 1 / 3
+      align-self: center
   &__logo
-    width: 166px
-    grid-row: 1 / 3
-    align-self: stretch
+    width: 153px
   &__categories
     grid-row: 1 / 4
+    margin-left: 5px
+  &__additional
+    margin-left: 5px
   &__social
-    &-network
-      display: flex
-      align-items: start
-      grid-row: 2 / 4
-      grid-column: span 2
     &-links
       display: flex
       align-items: center
       min-width: 83px
       justify-content: space-between
+      margin-left: 5px
+    &-network
+      display: flex
+      align-items: start
+      grid-row: 2 / 4
+      grid-column: span 2
+      margin-top: 4px
+      margin-left: 5px
+  &__legal
+    margin-left: 68px
   &__contact
+    margin-left: 10px
     &-details
       grid-column: span 2
+      margin-top: 13px
+      margin-left: -3px
     &-form
       grid-column: span 2
+      margin-left: 5px
   &__ul
     padding: 0
     margin: 0
@@ -42,10 +58,15 @@
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
+    &-categories
+      margin-bottom: 20px
+      margin-left: -2px
     &--second
       margin-bottom: 30px
     &--inline
       margin: 0 40px 0 0
+    &--form
+      margin-bottom: 35px
   &__item
     display: flex
     align-items: flex-start
@@ -55,24 +76,48 @@
     font-size: 14px
     line-height: 160%
     &--second
-      margin-bottom: 20px
+      margin-bottom: 13px
+      margin-left: 2px
+    &--third
+      margin-bottom: 23px
   &__icon
+    margin-top: 3px
+    &-mark
+      width: 14px
+      height: 20px
+      margin-left: 4px
+    &-phone
+      width: 22px
+      height: 22px
+      margin-top: 6px
+    &-email
+      width: 17px
+      height: 14px
+      margin-left: 3px
     &-wrapper
       min-width: 40px
+      margin-left: 2px
+      margin-bottom: 1px
   &__text
-    color: $ftc
+    margin-top: -4px
     margin-bottom: 22px
+    color: $ftc
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
   &__link
     text-decoration: none
     color: inherit
   &__input
     width: 100%
     &-group
-      margin-bottom: 20px
-      flex-basis: 48%
+      margin-bottom: 15px
+      flex-basis: 47%
   &__message
     margin-bottom: 22px
     flex-basis: 100%
+    height: 123px
   &__info
     font-style: normal
     font-weight: bold
